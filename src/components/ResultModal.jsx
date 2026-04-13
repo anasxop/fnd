@@ -72,7 +72,7 @@ export default function ResultModal({ open, onClose, loading, result }) {
                 </span>
 
                 <span className="text-xs text-gray-500 dark:text-gray-400">
-                  Primary: Gemini AI
+                  Gemini AI
                 </span>
               </div>
 
