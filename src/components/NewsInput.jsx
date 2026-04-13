@@ -17,7 +17,7 @@ const handleAnalyze = async () => {
   setResult(null);
 
   try {
-    const res = await axios.post("https://fnd-backend-eavt.onrender.com/", {
+    const res = await axios.post("https://fnd-backend-l4ay.onrender.com/predict", {
   text: text,
 });
 
@@ -25,7 +25,7 @@ const handleAnalyze = async () => {
   } catch (error) {
     console.error(error);
     setResult({
-      label: "Error",
+      final_verdict: "Error",
       confidence: 0,
       explanation: "Failed to connect to server.",
     });
