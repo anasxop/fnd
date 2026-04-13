@@ -17,7 +17,7 @@ const handleAnalyze = async () => {
   setResult(null);
 
   try {
-    const res = await axios.post("https://fnd-backend-l4ay.onrender.com/predict", {
+    const res = await axios.post("https://fnd-backend.vercel.app", {
   text: text,
 });
 
