@@ -109,6 +109,19 @@ export default function ResultModal({ open, onClose, loading, result }) {
                   {result?.explanation}
                 </p>
               </div>
+
+              {/* ML Secondary */}
+              <div className="mt-6 border-t border-black/10 dark:border-white/10 pt-4">
+                <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                  Secondary AI model (reference only)
+                </p>
+                <p className="text-sm text-black dark:text-white">
+                  Prediction: <strong>{result?.ml_result}</strong>
+                </p>
+                <p className="text-sm text-black dark:text-white">
+                  Confidence: <strong>{result?.ml_confidence}%</strong>
+                </p>
+              </div>
             </>
           )}
         </motion.div>
