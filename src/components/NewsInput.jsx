@@ -25,11 +25,9 @@ const handleAnalyze = async () => {
   } catch (error) {
     console.error(error);
     setResult({
-      final_verdict: "Error",
+      label: "Error",
       confidence: 0,
       explanation: "Failed to connect to server.",
-      ml_result: "N/A",
-      ml_confidence: 0,
     });
   }
 
