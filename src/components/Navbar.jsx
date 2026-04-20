@@ -161,7 +161,7 @@ export default function Navbar() {
           <div className="p-3 rounded-xl bg-white/40 dark:bg-white/10">⚡ One-click scan</div>
           <div className="p-3 rounded-xl bg-white/40 dark:bg-white/10">🔍 Highlights fake claims</div>
           <div className="p-3 rounded-xl bg-white/40 dark:bg-white/10">📊 Credibility score</div>
-          <div className="p-3 rounded-xl bg-white/40 dark:bg-white/10">🧠 NLP-powered</div>
+          <div className="p-3 rounded-xl bg-white/40 dark:bg-white/10">🧠 Gemini-powered</div>
         </div>
         <h3 className="font-semibold mb-2">How it works</h3>
         <ol className="list-decimal ml-4 space-y-2 mb-6">
