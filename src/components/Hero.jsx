@@ -8,23 +8,23 @@ export default function Hero() {
 
   return (
     <div className="flex flex-col items-center justify-center px-6 mt-24 text-center">
-     <motion.h1
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  className={`text-5xl md:text-6xl font-extrabold tracking-tight ${
-    dark
-      ? "text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]"
-      : "text-black"
-  }`}
->
-  Fake News Detection System
-</motion.h1>
-
+      <motion.h1
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+        className={`text-5xl md:text-6xl font-extrabold tracking-tight ${
+          dark
+            ? "text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]"
+            : "text-black"
+        }`}
+      >
+        Fake News Detection System
+      </motion.h1>
 
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.2, duration: 0.55 }}
         className={`mt-4 text-lg max-w-xl ${
           dark ? "text-gray-400" : "text-gray-600"
         }`}
@@ -35,7 +35,7 @@ export default function Hero() {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.35, duration: 0.55 }}
         className="mt-2 text-sm text-gray-500"
       >
         Created by{" "}
