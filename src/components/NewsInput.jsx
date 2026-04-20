@@ -15,7 +15,7 @@ export default function NewsInput() {
     setLoading(true);
     setResult(null);
     try {
-      const res = await axios.post("http://127.0.0.1:8000/predict", { text });
+      const res = await axios.post("https://fnd-backend.vercel.app/predict", { text });
       setResult(res.data);
     } catch (error) {
       console.error(error);
